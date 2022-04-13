@@ -298,9 +298,6 @@ export class GraphDisplayManager {
         show: false
       }
     }, this.getGraphData(), document.getElementById('big-graph'))
-
-    // Show the settings-toggle element
-    document.getElementById('settings-toggle').style.display = 'inline-block'
   }
 
   redraw = () => {
@@ -460,7 +457,5 @@ export class GraphDisplayManager {
     // Reset modified DOM structures
     document.getElementById('big-graph-checkboxes').innerHTML = ''
     document.getElementById('big-graph-controls').style.display = 'none'
-
-    document.getElementById('settings-toggle').style.display = 'none'
   }
 }

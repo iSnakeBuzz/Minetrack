@@ -61,16 +61,11 @@ export class SortController {
   constructor (app) {
     this._app = app
     this._buttonElement = document.getElementById('sort-by')
-    this._textElement = document.getElementById('sort-by-text')
     this._sortOptionIndex = SORT_OPTION_INDEX_DEFAULT
   }
 
   reset () {
     this._lastSortedServers = undefined
-
-    // Reset modified DOM structures
-    this._buttonElement.style.display = 'none'
-    this._textElement.innerText = '...'
 
     // Remove bound DOM event listeners
     this._buttonElement.removeEventListener('click', this.handleSortByButtonClick)
@@ -104,9 +99,6 @@ export class SortController {
     // Bind DOM event listeners
     // This is removed by #reset to avoid multiple listeners
     this._buttonElement.addEventListener('click', this.handleSortByButtonClick)
-
-    // Show #sort-by element
-    this._buttonElement.style.display = 'inline-block'
   }
 
   handleSortByButtonClick = () => {
@@ -133,9 +125,6 @@ export class SortController {
 
   updateSortOption = () => {
     const sortOption = SORT_OPTIONS[this._sortOptionIndex]
-
-    // Pass app instance so sortOption names can be dynamically generated
-    this._textElement.innerText = sortOption.getName(this._app)
 
     // Update all servers highlighted values
     for (const serverRegistration of this._app.serverRegistry.getServerRegistrations()) {

@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
 
-<head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"
+    />
 
-	<link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"> 
+    <meta charset="UTF-8" />
 
-	<link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <script defer src="../js/main.js"></script>
 
-	<meta charset="UTF-8">
+    <title>Minetrack</title>
+  </head>
 
-	<script defer src="../js/main.js"></script>
+  <body>
+    <div id="tooltip"></div>
 
-	<title>Minetrack</title>
+    <div id="status-overlay">
+      <img class="logo-image" src="../images/logo.svg" />
+      <h1 class="logo-text">Snake Tracker</h1>
+      <div id="status-text">Connecting...</div>
+    </div>
 
-</head>
+    <div id="push">
+      <div id="perc-bar"></div>
 
-<body>
+      <header>
+        <div class="header-possible-row-break column-left">
+          <img class="logo-image" src="../images/logo.svg" />
+          <h1 class="logo-text">Snake Tracker</h1>
+          <p class="logo-status">
+            Counting
+            <span class="global-stat" id="stat_totalPlayers">0</span> players on
+            <span class="global-stat" id="stat_networks">0</span> Minecraft
+            servers.
+          </p>
+        </div>
 
-	<div id="tooltip"></div>
+        <div class="buttons-container header-possible-row-break column-right">
+          <div id="sort-by" class="header-button header-button-single">
+            <span class="icon-sort-amount-desc" />
+          </div>
 
-	<div id="status-overlay">
-		<img class="logo-image" src="../images/logo.svg">
-		<h1 class="logo-text">Minetrack</h1>
-		<div id="status-text">Connecting...</div>
-	</div>
+          <div id="settings-toggle" class="header-button header-button-single">
+            <span class="icon-gears"></span>
+          </div>
+        </div>
+      </header>
 
-	<div id="push">
+      <div id="big-graph"></div>
 
-		<div id="perc-bar"></div>
+      <div id="big-graph-controls">
+        <div id="big-graph-controls-drawer">
+          <div id="big-graph-checkboxes"></div>
 
-		<header>
-			<div class="header-possible-row-break column-left">
-				<img class="logo-image" src="../images/logo.svg">
-				<h1 class="logo-text">Minetrack</h1>
-				<p class="logo-status">Counting <span class="global-stat" id="stat_totalPlayers">0</span> players on <span class="global-stat" id="stat_networks">0</span> Minecraft servers.</p>
-			</div>
+          <span class="graph-controls-setall">
+            <a minetrack-show-type="all" class="button graph-controls-show"
+              ><span class="icon-eye"></span> Show All</a
+            >
+            <a minetrack-show-type="none" class="button graph-controls-show"
+              ><span class="icon-eye-slash"></span> Hide All</a
+            >
+            <a
+              minetrack-show-type="favorites"
+              class="button graph-controls-show"
+              ><span class="icon-star"></span> Only Favorites</a
+            >
+          </span>
+        </div>
+      </div>
 
-			<div class="header-possible-row-break column-right">
-				<div id="sort-by" class="header-button header-button-single"><span class="icon-sort-amount-desc"></span> Sort By<br><strong id="sort-by-text">...</strong></div>
-				
-				<div id="settings-toggle" class="header-button header-button-single" style="margin-left: 20px;"><span class="icon-gears"></span> Graph Controls</div>
-			</div>
-		</header>
+      <div id="server-list"></div>
+    </div>
 
-		<div id="big-graph"></div>
-
-		<div id="big-graph-controls">
-			<div id="big-graph-controls-drawer">
-				<div id="big-graph-checkboxes"></div>
-
-				<span class="graph-controls-setall">
-					<a minetrack-show-type="all" class="button graph-controls-show"><span class="icon-eye"></span> Show All</a>
-					<a minetrack-show-type="none" class="button graph-controls-show"><span class="icon-eye-slash"></span> Hide All</a>
-					<a minetrack-show-type="favorites" class="button graph-controls-show"><span class="icon-star"></span> Only Favorites</a>
-				</span>
-			</div>
-		</div>
-
-		<div id="server-list"></div>
-
-	</div>
-
-	<footer id="footer">
-		<span class="icon-code"></span> Powered by open source software - <a href="https://github.com/Cryptkeeper/Minetrack">make it your own!</a>
-	</footer>
-
-</body>
-
+    <footer id="footer">
+      <span class="icon-code"></span> Powered by open source software -
+      <a href="https://github.com/Cryptkeeper/Minetrack">make it your own!</a>
+    </footer>
+  </body>
 </html>
