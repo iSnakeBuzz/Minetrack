@@ -1,17 +1,37 @@
 [
-	{
-		"name": "Hypixel",
-		"ip": "mc.hypixel.net",
-		"type": "PC"
-	},
-	{
-		"name": "Mineplex",
-		"ip": "us.mineplex.com",
-		"type": "PC"
-	},
-	{
-		"name": "CubeCraft",
-		"ip": "play.cubecraft.net",
-		"type": "PC"
-	}
+  {
+    "name": "HyCraft",
+    "ip": "mc.hycraft.us",
+    "type": "PC"
+  },
+  {
+    "name": "UniversoCraft",
+    "ip": "mc.universocraft.com",
+    "type": "PC"
+  },
+  {
+    "name": "Librecraft",
+    "ip": "mc.librecraft.com",
+    "type": "PC"
+  },
+  {
+    "name": "ZoneCraft",
+    "ip": "play.zonecraft.es",
+    "type": "PC"
+  },
+  {
+    "name": "MineBox",
+    "ip": "MC.MINEBOX.ES",
+    "type": "PC"
+  },
+  {
+    "name": "LatamCraft",
+    "ip": "mc.latamcraft.es",
+    "type": "PC"
+  },
+  {
+    "name": "EcuaCraft",
+    "ip": "mc.ecuacraft.club",
+    "type": "PC"
+  }
 ]
