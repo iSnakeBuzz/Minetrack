@@ -127,6 +127,42 @@
 		{
 			"name": "1.18.2",
 			"protocolId": 758
+		},
+		{
+			"name": "1.19",
+			"protocolId": 759
+		},
+		{
+			"name": "1.19.2",
+			"protocolId": 760
+		},
+		{
+			"name": "1.19.3",
+			"protocolId": 761
+		},
+		{
+			"name": "1.19.4",
+			"protocolId": 762
+		},
+		{
+			"name": "1.20.1",
+			"protocolId": 763
+		},
+		{
+			"name": "1.20.2",
+			"protocolId": 764
+		},
+		{
+			"name": "1.20.4",
+			"protocolId": 765
+		},
+		{
+			"name": "1.20.6",
+			"protocolId": 766
+		},
+		{
+			"name": "1.21",
+			"protocolId": 767
 		}
 	]
 }

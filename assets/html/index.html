@@ -13,7 +13,7 @@
 
     <meta charset="UTF-8" />
 
-    <script defer src="../js/main.js"></script>
+	<script defer type="module" src="../js/main.js"></script>
 
     <title>Snake Tracker</title>
   </head>
@@ -42,16 +42,12 @@
           </p>
         </div>
 
-        <div class="buttons-container header-possible-row-break column-right">
-          <div id="sort-by" class="header-button header-button-single">
-            <span class="icon-sort-amount-desc" />
-          </div>
+			<div class="header-possible-row-break column-right">
+				<div id="sort-by" class="header-button header-button-single"><span class="icon-sort-amount-desc"></span> Sort By<br><strong id="sort-by-text">...</strong></div>
 
-          <div id="settings-toggle" class="header-button header-button-single">
-            <span class="icon-gears"></span>
-          </div>
-        </div>
-      </header>
+				<div id="settings-toggle" class="header-button header-button-single" style="margin-left: 20px;"><span class="icon-gears"></span> Graph Controls</div>
+			</div>
+		</header>
 
       <div id="big-graph"></div>
 
